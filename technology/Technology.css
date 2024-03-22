@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@font-face {
+  font-family: brandon-grotesque;
+  src: url('../font/brandon-grotesque-font-family-1710803831-0/');
+}
+/* font awesome */ 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
+
+/* font */
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+/* custom. style */
+*{
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: brandon-grotesque;
+  color: #1d1d1d;;
+}
+
+/* 헤더 작업 */
+.Header{
+  /* background: rgba(0,0,0,0.2); */
+}
+.inner-Header{
+display: flex;
+width: 100%;
+padding-left: 118px; 
+ padding-right: 118px;
+}
+.inner-Header .logo-img-box{
+  width: 15%;
+  padding-top: 38px;
+padding-bottom: 38px;
+padding-left: 0;
+margin-left: 0;
+}
+.inner-Header img{
+  width: 130px;
+}
+
+.inner-Header ul
+{
+  width: 70%;
+  margin-left: 130px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: space-evenly;  
+}
+
+.inner-Header ul li{
+  list-style: none;
+  padding-top: 25px;
+  font-weight: 550;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 700500;
+  display: inline-block;
+}
+
+.inner-Header ul li:hover{
+  color: rgba(29, 29, 29, .4);
+}
+.inner-Header ul li a{
+  text-decoration: none;
+}
+
+/* 햄버거 만들기 */
+label.hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    position: absolute;
+    right: 180px;
+    top: 40px;
+    display: none;
+}
+
+.hamburger-btn:focus {
+  outline: none;
+}
+
+.bar {
+  display: block;
+  width: 35px; /* 줄의 너비 */
+  height: 5px; /* 줄의 높이 */
+  background-color: #333; /* 줄의 색상 */
+  margin: 6px 0; /* 줄 사이의 간격 */
+  transition: 0.4s; /* 애니메이션 효과 */
+}
+/* 헤더 끝 */
+
+
+/* 메인 */
+/* 메인 포스터 이미지 삽입 */
+.container .main-poster {
+  background: url('../img/Technology/RENDERMAN.jpg')
+  no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* 글자 포인트 */
+.container .main-poster h1{
+  font-style: 'brandon-grotesque';
+  font-size: 51px;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .29em;
+  line-height: 1em;
+  text-transform: uppercase;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+/* 특수효과2 - 랜더맨 포스터 블랙 반전 */
+/* .container .main-poster::before{
+  content: '';
+    width: 0%;
+    height: 100%;
+    background: rgba(27, 27, 27, .9);
+    position: absolute;
+    transition: 0.6s;
+}
+.container .main-poster:hover::before{
+  width:0%;
+} */
+.container .main-poster{
+  z-index: -1;
+  animation: background-changer 1.2s 1;
+  
+}
+@keyframes background-changer {
+  0%, 50% {
+    background-image: url('../img/Technology/Allblack.png'); }
+  100% {
+    background-image: url('../img/Technology/RENDERMAN.jpg');
+  }
+}
+
+
+/* 특수효과1-글자 깜빡임 */
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink-effect 0.8s step-end 1;
+
+}
+/* 랜더맨 설명 섹션 */
+.RENDERMAN-Description{
+  width: 100%;
+  margin-top: 200px;
+  /* position: relative; */
+}
+section.RENDERMAN-Description blockquote{
+  padding-left: 170px;
+  padding-right: 170px;
+  /* position:absolute;
+  left: 50%;
+  transform: translate(-50%,0); */
+  margin: 0 auto;
+  width: 91.6667%;
+  text-align: left;
+  display: block;
+  /* margin-block-start: 1em; */
+  /* margin-block-end: 1em; */
+  /* margin-inline-start: 40px;
+  margin-inline-end: 40px; */
+  /*  */
+    font-family: Rubik;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+    text-transform: none;
+    color: rgba(29, 29, 29, .7);
+}
+
+section.RENDERMAN-Description figcaption{
+  font-family: Rubik;
+    padding-left: 230px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .15em;
+    line-height: 4em;
+    text-transform: uppercase;
+display: block;
+
+color: rgba(29, 29, 29, .7);
+}
+/* 중간 버튼 */
+.line-button-container{
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+.line-button-container .line{
+  margin: 21px 43%;
+  color: #ddd;
+    background-color: #ddd;
+    height: 1px;
+    border: none;
+
+}
+.line-button-container button{
+  margin-top: 17px;
+  margin-bottom: 17px;
+  padding: 19px 34px;
+  font-family: Rubik;
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+  background-color: transparent;
+      color: #1d1d1d; 
+}
+
+.line-button-container button:hover{
+  background-color: #1d1d1d;
+  color: #fff;
+}
+section.p-container{
+  
+}
+section.p-container p{
+    font-family: futura-pt;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 0em;
+    line-height: 1.7em;
+    text-transform: none;
+    color: rgba(29, 29, 29, .7);
+    padding-left: 250px;
+    padding-right: 330px;
+    
+}
+
+section.p-container hr{
+  margin: 40px 43%;
+  color: #ddd;
+    background-color: #ddd;
+    height: 1px;
+    border: none;
+}
+/* section.gallery */
+
+/*  */
+section.gallery
+{
+  position: relative;
+}
+section.gallery ul{
+  width: 100%;
+  padding-left: 7%;
+  /* padding-right: 0;  */
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap:  wrap;
+  overflow: hidden;
+
+  }
+  
+  /* 이미지 박스 */
+  section.gallery li{
+  
+  
+  margin-right: 2%;
+  margin-bottom: 2%;
+  list-style: none;
+  overflow: hidden;
+  height: 390px;
+  width: 20%;
+}
+
+/* 이미지 */
+section.gallery li img{
+/* display: inline-block; */
+/* object-fit: contain; */
+height: 100%;
+position: relative;
+left: -290px;
+cursor: pointer;
+/* scale 잘못쓰면 flex 꼬임.. */
+/* transform: scale(0.9); */
+}
+/*  */
+section.gallery li:nth-child(4) img{
+  position: relative;
+  left: -400px;;
+}
+section.gallery li:nth-child(6) img{
+  position: relative;
+  left: -500px;;
+}
+section.gallery li:nth-child(7) img{
+  position: relative;
+  left: -400px;;
+}
+section.gallery li:nth-child(10) img{
+  position: relative;
+  left: -400px;;
+}
+section.gallery li:nth-child(12) img{
+  position: relative;
+  left: -200px;;
+}
+/*  */
+section.gallery h3{
+  text-align:center;
+  white-space:pre-wrap;
+  color: #1d1d1d;
+  font-family: brandon-grotesque;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      letter-spacing: .29em;
+      line-height: 1.7em;
+      text-transform: uppercase;
+      padding-top: 1300px;
+}
+
+.empty-container{
+  padding: 50px 142px;
+}
+/* footer 작업 */
+/* 링크 박스 */
+footer .link-box{
+  text-align: center;
+  font-size: 50px;
+}
+footer i{
+  ont-family: futura-pt;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 0em;
+    line-height: 1.7em;
+    text-transform: none;
+    margin: 15px;
+}
+footer i{
+  color: black;
+}
+footer i:hover{
+color: gray;
+}
+
+.link-box{
+  margin-bottom: 30px;
+}
+
+/* a링크 모음 */
+footer .link-list{
+  text-align: center;
+}
+footer .link-list a{
+  font-family: brandon-grotesque;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: .29em;
+  line-height: 1.7em;
+  text-transform: uppercase;
+}
+
+footer .link-list h3{
+  ont-family: brandon-grotesque;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .29em;
+    line-height: 1.7em;
+    text-transform: uppercase;
+  margin-bottom: 50px;
+}
+footer .last-button-box{
+  text-align: center;
+}
+footer button{
+  color: #68b631;
+  border: 1px solid #68b631;
+    height: auto;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0.8em 2em;
+    font-size: 17.6px;
+    line-height: 1.2;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+footer button:hover{
+  color: #fff;
+  background-color: #68b631;
+}
+
+/* 반응형 */
+@media (max-width: 1230px) {
+  .Header .inner-Header ul{
+    display: none;
+  }
+  label.hamburger-btn {
+    display: inline-block;
+    }
+    section.RENDERMAN-Description blockquote{
+      padding-left: 100px;
+      padding-right: 50px;
+    }
+    section.RENDERMAN-Description figcaption{
+      padding-left: 130px;
+    }
+    section.p-container p {
+      padding-right: 220px;
+    }
+}
+
+@media (max-width: 1024px) {
+  label.hamburger-btn {
+  right: 100px;
+  }
+  section.RENDERMAN-Description blockquote{
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+  section.RENDERMAN-Description figcaption{
+    padding-left: 135px;
+  }
+  section.p-container p {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+}

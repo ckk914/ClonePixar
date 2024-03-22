@@ -1,0 +1,293 @@
+@import url(../technology-usd/font/);
+@import url(../technology-usd/common.css);
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+
+/* <main style> */
+header {
+  height: 100vh;
+}
+
+
+/* main style - 메뉴판 */
+header .main1 {
+  /* border: 3px solid green; */
+  padding: 45px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+header .main1 img.logo {
+  /* border: 3px solid red; */
+  width: 150px;
+  height: 35px;
+  position: absolute;
+  left: 150px;
+  top: 35px;
+}
+header .main1 ul a {
+  /* border: 3px solid blue; */
+  margin-right: 40px;
+  font-family: brandon-grotesque;
+      font-style: normal;
+      font-weight: 550;
+      letter-spacing: 2px;
+      font-size: 15px;
+}
+header .main1 ul a:hover {
+  color: gray;
+}
+header .main1 ul a.about {
+  margin-right: 100px;
+}
+header .main1 img.main {
+  height: 100vh;
+}
+
+
+/* main style - 배경사진 */
+header .main2 {
+  /* border: 5px solid red; */
+  position: relative;
+}
+header .main2 img.main {
+  height: 90vh;
+  width: 100%;
+}
+header .main2 .content {
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  color: #fff;
+}
+header .main2 .content h1 {
+  font-size: 7em;
+  font-weight: 1000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+
+/* <contents style - container> */
+.container {
+  /* height: 330vh; */
+  /* border: 5px solid #000; */
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+
+/* <contents style - 왼쪽박스> */
+.container .box1 {
+  /* border: 2px solid red; */
+  width: 50%;
+  position: relative;
+}
+.container .box1 h1, h2, h3 {
+  /* background: red; */
+  padding: 20px 0;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "brandon-grotesque" ,sans-serif;
+}
+
+/* 왼쪽박스 div 전체 */
+.container .box1 div {
+  font-size: 20px;
+  text-align: left;
+  color: gray;
+  line-height: 35px;
+  /* position: relative; */
+}
+.container .box1 a .image1, .image3 {
+  width: 100%;
+  margin-top: 50px;
+}
+.container .box1 a .image2 {
+  width: 100%;
+  margin-top: 30px;
+}
+.container .box1 .usd3 {
+  padding: 30px;
+  text-align: center;
+}
+.container .box1 .usd1, .usd2, .usd4, .usd5, .usd6, .usd7, .usd8, .usd9 {
+  margin-top: 30px;
+  color: rgba(29, 29, 29, .7);
+  font-family: 'Futura PT', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+}
+.container .box1 .usd7 a {
+  color: skyblue;
+  border-bottom: 1px solid skyblue;
+}
+
+.container .box1 .a1::after {
+  content: '<';
+  font-size: 50px;
+  position: absolute;
+  top: 38%;
+  left: 1%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .12);
+}
+.container .box1 .a1::after:hover {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.container .box1 .a1::before {
+  content: '>';
+  font-size: 50px;
+  position: absolute;
+  top: 38%;
+  left: 95%;
+  color: #fff;
+}
+
+
+/* <contents style - 오른쪽 박스> */
+.container .box2 {
+  /* border: 2px solid blue; */
+  width: 25%;
+}
+
+.container .box2 .image4 {
+  width: 100%;
+}
+
+.container .box2 .usd1 {
+  padding: 30px 0;
+  color: rgba(29, 29, 29, .7);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.container .box2 .usd2, .usd3, .usd4, .usd5, .usd6 {
+  font-size: 18px;
+  text-align: left;
+  color: rgba(29, 29, 29, .7);
+  font-family: 'Futura PT', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  position: relative;
+  /* margin-bottom: 100px; */
+}
+.container .box2 .usd2 a {
+  color: skyblue;
+  font-size: 20px;
+  border-bottom: 1px solid skyblue;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+}
+.container .box2 .usd2 {
+  margin-bottom: 90px;
+}
+.container .box2 h1 {
+  margin-top: 50px;
+  text-align: right;
+  font-size: 80px;
+  /* border: 1px solid #000; */
+  position: relative;
+}
+.container .box2 .logo {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+}
+.container .box2 h1 span {
+  font-weight: 1000;
+}
+.container .box2 .usd3 {
+  margin-top: 70px;
+}
+.container .box2 .usd3 a {
+  color: skyblue;
+  border-bottom: 1px solid skyblue;
+}
+.container .box2 .usd6 a {
+  font-size: 20px;
+  color: skyblue;
+  border-bottom: 1px solid skyblue;
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+}
+/* 밑줄 */
+.container hr {
+  color: gray;
+  margin-top: 40px;
+}
+
+
+/* footer style */
+footer {
+  height: 50vh;
+  margin-top: 100px;
+  /* padding: 150px 0; */
+  position: relative;
+  /* border: 3px solid red; */
+  top:0;
+}
+footer nav.icon {
+  /* border: 1px solid #000; */
+  font-size: 25px;
+  text-align: center;
+}
+footer div.link {
+  /* border: 1px solid green; */
+  text-align: center;
+  padding: 50px;
+}
+footer div.link a {
+  text-decoration: underline;
+  letter-spacing: 6px;
+  font-size: 15px;
+  font-family: 'Futura PT', sans-serif;
+  line-height: 50px;
+}
+footer div.link a:hover {
+  color: gray;
+}
+footer div.link .a1, .a2 {
+  border-right: 1px solid #000;
+}
+footer p {
+  text-align: center;
+  font-family: 'Futura PT', sans-serif;
+  margin-top: -30px;
+  font-size: 15px;
+  font-weight: 300;
+}
+footer button {
+  color: #68b631;
+  border: 1px solid #68b631;
+  padding: 20px 30px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  bottom: 0;
+  font-family: 'Futura PT', sans-serif;
+  font-size: 20px;
+}
+footer button:hover {
+  background: #68b631;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  
+}
