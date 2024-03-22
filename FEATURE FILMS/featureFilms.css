@@ -94,10 +94,16 @@ label.hamburger-btn {
 /* 헤더 끝 */
 /* 메인 포스터 이미지 삽입 */
 .container .main-poster {
-  background: url('../img/featureFilms/Top-poster.jpg')
-  no-repeat center/cover;
+  /* background: url('../img/featureFilms/Top-poster.jpg')
+   no-repeat center/cover; */
   height: 100vh;
   position: relative;
+  /* 에니메이션 효과 */
+  animation: blackFadeout 2s 1;
+  /* 에니메이션 끝난 후 유지되도록 함 */
+  animation-fill-mode: forwards;
+  z-index: -1;
+  /* animation: background-changer 1.2s; */
 }
 
 /* 글자 포인트 */
@@ -115,32 +121,27 @@ label.hamburger-btn {
   left:50%;
   transform: translate(-50%,-50%);
 }
-/* 특수효과2 - 랜더맨 포스터 블랙 반전 */
-/* .container .main-poster::before{
-  content: '';
-    width: 0%;
-    height: 100%;
-    background: rgba(27, 27, 27, .9);
-    position: absolute;
-    transition: 0.6s;
-}
+
 .container .main-poster:hover::before{
   width:0%;
-} */
-.container .main-poster{
-  z-index: -1;
-  animation: background-changer 1.2s 1;
-  
-}
-@keyframes background-changer {
-  0%, 50% {
-    background-image: url('../img/Technology/Allblack.png'); }
-    
-  100% {
-    background-image: url('../img/featureFilms/Top-poster.jpg');
-  }
 }
 
+
+/* 이미지  나타나는 효과 구현 */
+@keyframes blackFadeout {
+  0%,50%,80% {
+    /* 어두운 화면 */
+    background-color: #1d1d1d;
+    opacity: 1;
+}
+100%{
+  /* 이미지 불러옴 */
+    background-color: transparent;
+    background: url('../img/featureFilms/Top-poster.jpg')
+    no-repeat center/cover;
+    /* opacity: 0; */
+}
+}
 
 /* 특수효과1-글자 깜빡임 */
 @keyframes blink-effect {
