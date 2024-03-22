@@ -92,3 +92,64 @@ label.hamburger-btn {
   transition: 0.4s; /* 애니메이션 효과 */
 }
 /* 헤더 끝 */
+/* 메인 포스터 이미지 삽입 */
+.container .main-poster {
+  background: url('../img/featureFilms/Top-poster.jpg')
+  no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* 글자 포인트 */
+.container .main-poster h1{
+  font-style: 'brandon-grotesque';
+  font-size: 51px;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .29em;
+  line-height: 1em;
+  text-transform: uppercase;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+/* 특수효과2 - 랜더맨 포스터 블랙 반전 */
+/* .container .main-poster::before{
+  content: '';
+    width: 0%;
+    height: 100%;
+    background: rgba(27, 27, 27, .9);
+    position: absolute;
+    transition: 0.6s;
+}
+.container .main-poster:hover::before{
+  width:0%;
+} */
+.container .main-poster{
+  z-index: -1;
+  animation: background-changer 1.2s 1;
+  
+}
+@keyframes background-changer {
+  0%, 50% {
+    background-image: url('../img/Technology/Allblack.png'); }
+    
+  100% {
+    background-image: url('../img/featureFilms/Top-poster.jpg');
+  }
+}
+
+
+/* 특수효과1-글자 깜빡임 */
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink-effect 0.8s step-end 1;
+
+}
