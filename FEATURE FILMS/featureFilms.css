@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@font-face {
+  font-family: brandon-grotesque;
+  src: url('../font/brandon-grotesque-font-family-1710803831-0/');
+}
+/* font awesome */ 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
+
+/* font */
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+/* custom. style */
+*{
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: brandon-grotesque;
+  color: #1d1d1d;;
+}
+
+/* 헤더 작업 */
+.Header{
+  /* background: rgba(0,0,0,0.2); */
+}
+.inner-Header{
+display: flex;
+width: 100%;
+padding-left: 118px; 
+ padding-right: 118px;
+}
+.inner-Header .logo-img-box{
+  width: 15%;
+  padding-top: 38px;
+padding-bottom: 38px;
+padding-left: 0;
+margin-left: 0;
+}
+.inner-Header img{
+  width: 130px;
+}
+
+.inner-Header ul
+{
+  width: 70%;
+  margin-left: 130px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: space-evenly;  
+}
+
+.inner-Header ul li{
+  list-style: none;
+  padding-top: 25px;
+  font-weight: 550;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 700500;
+  display: inline-block;
+}
+
+
+.inner-Header ul li a:hover{
+  color: #9f9f9f;
+}
+.inner-Header ul li a{
+  text-decoration: none;
+}
+
+
+/* 햄버거 만들기 */
+label.hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    position: absolute;
+    right: 180px;
+    top: 40px;
+    display: none;
+}
+
+.hamburger-btn:focus {
+  outline: none;
+}
+
+.bar {
+  display: block;
+  width: 35px; /* 줄의 너비 */
+  height: 5px; /* 줄의 높이 */
+  background-color: #333; /* 줄의 색상 */
+  margin: 6px 0; /* 줄 사이의 간격 */
+  transition: 0.4s; /* 애니메이션 효과 */
+}
+/* 헤더 끝 */

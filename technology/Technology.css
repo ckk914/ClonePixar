@@ -57,8 +57,8 @@ margin-left: 0;
   display: inline-block;
 }
 
-.inner-Header ul li:hover{
-  color: rgba(29, 29, 29, .4);
+.inner-Header ul li a:hover{
+  color: #9f9f9f;
 }
 .inner-Header ul li a{
   text-decoration: none;
