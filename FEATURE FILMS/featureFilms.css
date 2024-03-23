@@ -154,3 +154,7 @@ label.hamburger-btn {
   animation: blink-effect 0.8s step-end 1;
 
 }
+/* gallery */
+section.gallery ul li{
+  list-style: none;
+}
