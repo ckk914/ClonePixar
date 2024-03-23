@@ -158,3 +158,17 @@ label.hamburger-btn {
 section.gallery ul li{
   list-style: none;
 }
+
+section.gallery ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:  wrap;
+  overflow: hidden;
+}
+section.gallery ul .imgbox{
+  width: 350px;
+  height: 512px;
+}
+section.gallery img{
+  height: 100%;
+}
