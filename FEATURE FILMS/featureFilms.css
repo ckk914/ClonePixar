@@ -13,8 +13,11 @@
 *{
   box-sizing: border-box;
   font-size: 15px;
-  font-family: brandon-grotesque;
-  color: #1d1d1d;;
+  /* font-family: brandon-grotesque; */
+  font-family: futura-pt;
+  font-weight: 400;
+  font-style: normal;
+  color: #1d1d1d;
 }
 
 /* 헤더 작업 */
@@ -155,20 +158,38 @@ label.hamburger-btn {
 
 }
 /* gallery */
-section.gallery ul li{
-  list-style: none;
+section.gallery{
+  padding: 150px 142px;
 }
 
 section.gallery ul{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap:  wrap;
   overflow: hidden;
+  text-align: center;
 }
 section.gallery ul .imgbox{
-  width: 350px;
+  width: 33.33%;
   height: 512px;
+  list-style: none;
+  padding-bottom: 150px;
+  box-sizing: border-box;
 }
 section.gallery img{
   height: 100%;
+  display: inline-block;
+  /* margin-bottom: 200px; */
+}
+
+section.gallery .image-slide-title{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 0.5em;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
