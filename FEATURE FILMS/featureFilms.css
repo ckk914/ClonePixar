@@ -193,3 +193,75 @@ section.gallery .image-slide-title{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* footer */
+/* footer 작업 */
+/* 링크 박스 */
+footer .link-box{
+  text-align: center;
+  font-size: 50px;
+}
+footer i{
+  ont-family: futura-pt;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 0em;
+    line-height: 1.7em;
+    text-transform: none;
+    margin: 15px;
+}
+footer i{
+  color: black;
+}
+footer i:hover{
+color: gray;
+}
+
+.link-box{
+  margin-bottom: 30px;
+}
+
+/* a링크 모음 */
+footer .link-list{
+  text-align: center;
+}
+footer .link-list a{
+  font-family: brandon-grotesque;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: .29em;
+  line-height: 1.7em;
+  text-transform: uppercase;
+}
+
+footer .link-list h3{
+  ont-family: brandon-grotesque;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .29em;
+    line-height: 1.7em;
+    text-transform: uppercase;
+  margin-bottom: 50px;
+}
+footer .last-button-box{
+  text-align: center;
+}
+footer button{
+  color: #68b631;
+  border: 1px solid #68b631;
+    height: auto;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0.8em 2em;
+    font-size: 17.6px;
+    line-height: 1.2;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+footer button:hover{
+  color: #fff;
+  background-color: #68b631;
+}
